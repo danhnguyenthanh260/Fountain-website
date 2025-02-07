@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đăng ký và đăng nhập</title>
+  </head>
+  <body>
+    <h2>Đăng ký</h2>
+    <form id="signupForm">
+      <input type="text" id="signupUsername" placeholder="Tên người dùng" /><br />
+      <input type="email" id="signupEmail" placeholder="Email" /><br />
+      <input type="password" id="signupPassword" placeholder="Mật khẩu" /><br />
+      <button type="button" onclick="signup()">Đăng ký</button>
+    </form>
+
+    <h2>Đăng nhập</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Tên người dùng/Email" /><br />
+      <input type="password" id="loginPassword" placeholder="Mật khẩu" /><br />
+      <button type="button" onclick="login()">Đăng nhập</button>
+    </form>
+
+    <script src="./js/registration.js"></script>
+  </body>
+</html>

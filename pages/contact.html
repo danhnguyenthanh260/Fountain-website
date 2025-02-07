@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education Platform</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="../css/home.css" />
+    <script defer src="../js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,23 +24,23 @@
     <!-- Header -->
     <header class="header">
       <div class="logo">
-        <img src="image/Fountain_logo.png" alt="Fountain" />
+        <img src="../image/Fountain_logo.png" alt="Fountain" />
       </div>
       <nav class="nav">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Instructors</a></li>
-          <li><a href="#">Schedules</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" onclick="redirectToHome()">Home</a></li>
+          <li><a href="#" onclick="redirectToCourses()">Courses</a></li>
+          <li><a href="#" onclick="redirectToInstructors()">Instructors</a></li>
+          <li><a href="#" onclick="redirectToSchedules()">Schedules</a></li>
+          <li><a href="#" onclick="redirectToContact()">Contact</a></li>
         </ul>
       </nav>
       <div class="registration">
         <div class="finding">
-          <img src="./image/Finding_icon.png" alt="find" />
+          <img src="..//image/Finding_icon.png" alt="find" />
         </div>
         <button class="login-btn">Login</button>
-        <button class="register-btn">Register</button>
+        <button class="register-btn" onclick="redirectToRegister()">Register</button>
       </div>
       <div class="menu-toggle"><i class="fa fa-bars"></i></div>
     </header>
@@ -58,19 +58,19 @@
     <div class="features-box">
       <div class="feature">
         <div class="feature-icon">
-          <img src="image/Livechat_icon.svg" alt="Live Chat" />
+          <img src="../image/Livechat_icon.svg" alt="Live Chat" />
         </div>
         <span>Live chat</span>
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <img src="image/Examination_icon.svg" alt="Examination" />
+          <img src="../image/Examination_icon.svg" alt="Examination" />
         </div>
         <span>Examination</span>
       </div>
       <div class="feature">
         <div class="feature-icon">
-          <img src="image/Competition_icon.svg" alt="Competition" />
+          <img src="../image/Competition_icon.svg" alt="Competition" />
         </div>
         <span>Competition</span>
       </div>
@@ -81,19 +81,19 @@
       <h2>Top Categories</h2>
       <div class="category-container">
         <div class="category">
-          <img src="image/Category_1_Marketing.png" alt="Marketing" />
+          <img src="../image/Category_1_Marketing.png" alt="Marketing" />
           <span>Marketing</span>
         </div>
         <div class="category">
-          <img src="image/Category_2_Design.png" alt="Design" />
+          <img src="../image/Category_2_Design.png" alt="Design" />
           <span>Design</span>
         </div>
         <div class="category">
-          <img src="image/Category_3_Programming.png" alt="Programming" />
+          <img src="../image/Category_3_Programming.png" alt="Programming" />
           <span>Programming</span>
         </div>
         <div class="category">
-          <img src="image/Category_4_Technology.png" alt="Technology" />
+          <img src="../image/Category_4_Technology.png" alt="Technology" />
           <span>Technology</span>
         </div>
       </div>
@@ -102,7 +102,7 @@
     <!-- About Section -->
     <section class="about">
       <div class="about-image">
-        <img src="image/Outstanding_standard_pic.png" alt="Instructor" />
+        <img src="../image/Outstanding_standard_pic.png" alt="Instructor" />
       </div>
       <div class="about-text">
         <h2>We are <span class="highlight">Experts</span> Learning Institution</h2>

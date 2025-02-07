@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Platform</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <script defer src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Liter&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Liter&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="../image/Fountain_logo.png" alt="Fountain" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#" onclick="redirectToHome()">Home</a></li>
+          <li><a href="#" onclick="redirectToCourses()">Courses</a></li>
+          <li><a href="#" onclick="redirectToInstructors()">Instructors</a></li>
+          <li><a href="#" onclick="redirectToSchedules()">Schedules</a></li>
+          <li><a href="#" onclick="redirectToContact()">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="registration">
+        <div class="finding">
+          <img src="..//image/Finding_icon.png" alt="find" />
+        </div>
+        <button class="login-btn">Login</button>
+        <button class="register-btn" onclick="redirectToRegister()">Register</button>
+      </div>
+      <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>A Classical Education for the Future</h1>
+        <p>We prepare you to engage in the world that is and to help bring about a world that ought to be</p>
+        <button class="hero-btn">Get Started</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="features-box">
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="../image/Livechat_icon.svg" alt="Live Chat" />
+        </div>
+        <span>Live chat</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="../image/Examination_icon.svg" alt="Examination" />
+        </div>
+        <span>Examination</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="../image/Competition_icon.svg" alt="Competition" />
+        </div>
+        <span>Competition</span>
+      </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <h2>Top Categories</h2>
+      <div class="category-container">
+        <div class="category">
+          <img src="../image/Category_1_Marketing.png" alt="Marketing" />
+          <span>Marketing</span>
+        </div>
+        <div class="category">
+          <img src="../image/Category_2_Design.png" alt="Design" />
+          <span>Design</span>
+        </div>
+        <div class="category">
+          <img src="../image/Category_3_Programming.png" alt="Programming" />
+          <span>Programming</span>
+        </div>
+        <div class="category">
+          <img src="../image/Category_4_Technology.png" alt="Technology" />
+          <span>Technology</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-image">
+        <img src="../image/Outstanding_standard_pic.png" alt="Instructor" />
+      </div>
+      <div class="about-text">
+        <h2>We are <span class="highlight">Experts</span> Learning Institution</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
+    </section>
+  </body>
+</html>
