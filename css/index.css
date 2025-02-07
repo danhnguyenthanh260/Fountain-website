@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+  font-family: "Open Sans", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Header */
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 25%;
+  z-index: 1;
+  margin-top: 25px;
+}
+
+.logo {
+  position: relative;
+  right: 40%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.registration {
+  position: relative;
+  display: flex;
+  left: 34%;
+}
+
+.finding img {
+  position: relative;
+  width: 17.71px;
+  top: 14px;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 12px 28px;
+  border: none;
+}
+
+.register-btn {
+  background: #ffffff;
+  color: #ff6f28;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("../image/Large_Background_image.png") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Dark Overlay for Readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+}
+
+/* Centering the Content */
+.hero-content {
+  font-family: "Poppins", serif;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+
+.hero-content p {
+  padding: 0px 100px;
+  line-height: 36px;
+  font-weight: 200;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-btn {
+  background: #ff6f28; /* Màu cam */
+  color: white; /* Chữ trắng */
+  padding: 20px 42px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.hero-btn:hover {
+  transform: translateY(-1px); /* Nhấc nút lên một chút */
+  box-shadow: 0px 6px 15px rgba(255, 102, 0, 0.2);
+}
+
+/* Responsive: Giảm kích thước nút trên mobile */
+@media (max-width: 768px) {
+  .header {
+    background-size: cover;
+    height: auto;
+  }
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .hero {
+    background: url("../image/Large_Background_image.png") no-repeat center top;
+    background-size: cover; /* Ensures full coverage on mobile */
+    height: auto;
+    min-height: 90vh;
+    padding: 15px;
+  }
+}
+
+/* Categories */
+.categories {
+  text-align: center;
+  padding: 30px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 200px;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.about-image img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Feature Box */
+.features-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: -30px auto 20px; /* Đẩy lên trên */
+  position: relative;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffe7db;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon img {
+  width: 40px; /* Kích thước icon */
+  height: 40px;
+}
