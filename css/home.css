@@ -113,25 +113,49 @@ header {
   max-width: 50%;
 }
 
-.hero-btn {
-  background: #ff6f28; /* Màu cam */
-  color: #ffffff; /* Chữ trắng */
-  padding: 20px 42px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 400;
-  transition: all 0.3s ease-in-out;
+/* Feature Box */
+.features-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: -30px auto 20px; /* Đẩy lên trên */
+  position: relative;
 }
 
-/* Hover Effect */
-.hero-btn:hover {
-  transform: translateY(-1px); /* Nhấc nút lên một chút */
-  box-shadow: 0px 6px 15px rgba(255, 102, 0, 0.3);
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffe7db;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon img {
+  width: 40px; /* Kích thước icon */
+  height: 40px;
 }
 
 /* Carousel */
+
+.category {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  line-height: 72px;
+  margin: 30px;
+}
 .carousel-container {
   display: flex;
   align-items: center;
@@ -213,39 +237,4 @@ header {
 .about-image img {
   width: 250px;
   border-radius: 10px;
-}
-
-/* Feature Box */
-.features-box {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background: white;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: -30px auto 20px; /* Đẩy lên trên */
-  position: relative;
-}
-
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  background: #ffe7db;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-icon img {
-  width: 40px; /* Kích thước icon */
-  height: 40px;
 }

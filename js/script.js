@@ -15,7 +15,7 @@ function redirectToLogin() {
   window.location.href = "login.html";
 }
 function redirectToHome() {
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
 
 function redirectToCourses() {
