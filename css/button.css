@@ -1,0 +1,66 @@
+#search-input {
+  opacity: 0;
+  transition: opacity 1s ease;
+  margin-right: 10px;
+  height: 30px;
+  background-color: transparent;
+  color: #f0f4f9;
+  border: 1px solid #ffffff;
+  border-radius: 15px; /* Rounded corners on the left */
+  flex-grow: 1; /* Input takes up available space */
+}
+
+#search-button {
+  border: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#search-button img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-container:hover #search-input {
+  transition: opacity 1s ease;
+  opacity: 1; /* Show on hover */
+}
+
+#search-input::placeholder {
+  color: #f0f4f9;
+  opacity: 0.5; /* Slightly visible placeholder */
+}
+
+#search-input:focus::placeholder {
+  opacity: 0; /* Hide placeholder on focus */
+}
+
+.login-btn,
+.register-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.register-btn {
+  background: #ffffff;
+  color: #ff6f28;
+}
+
+.register-btn:hover {
+  background-color: #ebe2df; /* Màu đậm hơn khi hover */
+}

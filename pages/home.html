@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fountain</title>
+    <link rel="stylesheet" href="../css/button.css" />
     <link rel="stylesheet" href="../css/home.css" />
-    <script defer src="../js/script.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,10 +38,13 @@
         </ul>
       </nav>
       <div class="registration">
-        <div class="finding">
-          <img src="..//image/Finding_icon.png" alt="find" onclick="redirectToRegister()" />
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Finding..." />
+          <button id="search-button">
+            <img src="../image/Finding_icon.png" alt="Search" />
+          </button>
         </div>
-        <button class="login-btn" onclick="redirectToRegister()">Login</button>
+        <button class="login-btn" onclick="redirectToLogin()">Login</button>
         <button class="register-btn" onclick="redirectToRegister()">Register</button>
       </div>
     </header>
@@ -77,27 +81,38 @@
     </div>
 
     <!-- Categories Section -->
-    <section class="categories">
-      <h2>Top Categories</h2>
-      <div class="category-container">
-        <div class="category">
-          <img src="../image/Category_1_Marketing.png" alt="Marketing" />
-          <span>Marketing</span>
-        </div>
-        <div class="category">
-          <img src="../image/Category_2_Design.png" alt="Design" />
-          <span>Design</span>
-        </div>
-        <div class="category">
-          <img src="../image/Category_3_Programming.png" alt="Programming" />
-          <span>Programming</span>
-        </div>
-        <div class="category">
-          <img src="../image/Category_4_Technology.png" alt="Technology" />
-          <span>Technology</span>
+    <div class="carousel-container">
+      <div id="prev-btn" class="carousel-nav">&#10094;</div>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="category">
+            <img src="../image/Category_1_Marketing.png" alt="Marketing" />
+            <span>Marketing</span>
+          </div>
+          <div class="category">
+            <img src="../image/Category_2_Design.png" alt="Design" />
+            <span>Design</span>
+          </div>
+          <div class="category">
+            <img src="../image/Category_3_Programming.png" alt="Programming" />
+            <span>Programming</span>
+          </div>
+          <div class="category">
+            <img src="../image/Category_4_Technology.png" alt="Technology" />
+            <span>Technology</span>
+          </div>
+          <div class="category">
+            <img src="../image/Category_4_Technology.png" alt="Category 5" />
+            <span>Category 5</span>
+          </div>
+          <div class="category">
+            <img src="../image/Category_4_Technology.png" alt="Category 6" />
+            <span>Category 6</span>
+          </div>
         </div>
       </div>
-    </section>
+      <div id="next-btn" class="carousel-nav">&#10095;</div>
+    </div>
 
     <!-- About Section -->
     <section class="about">
@@ -110,5 +125,9 @@
         <button class="enroll-btn">Enroll Now</button>
       </div>
     </section>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/categories.js"></script>
+    <script src="../js/search_button.js"></script>
   </body>
 </html>

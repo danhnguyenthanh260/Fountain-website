@@ -1,0 +1,88 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Responsive: Giảm kích thước nút trên mobile */
+  @media (max-width: 768px) {
+    .header {
+      background-size: cover;
+      height: auto;
+    }
+    .hero-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .hero {
+      background: url("../image/Large_Background_image.png") no-repeat center top;
+      background-size: cover; /* Ensures full coverage on mobile */
+      height: auto;
+      min-height: 90vh;
+      padding: 15px;
+    }
+    /* Media Query cho Mobile */
+
+    header {
+      flex-direction: column; /* Sắp xếp dọc */
+      align-items: flex-start; /* Canh trái */
+      padding: 0.5rem;
+    }
+
+    .logo {
+      margin-bottom: 0.5rem; /* Khoảng cách với menu */
+    }
+
+    .nav-links {
+      display: none; /* Ẩn menu */
+      flex-direction: column; /* Dạng cột */
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: 0.5rem;
+    }
+
+    .nav-links.active {
+      /* Hiển thị menu khi toggle */
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0.5rem 0; /* Khoảng cách giữa các link */
+      text-align: center;
+    }
+
+    .registration {
+      flex-direction: column; /* Nút dọc */
+      width: 100%;
+    }
+
+    .login-btn,
+    .register-btn {
+      width: 100%; /* Nút full width */
+      margin: 0.25rem 0;
+    }
+
+    .menu-toggle {
+      display: block; /* Hiển thị toggle */
+    }
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .category {
+    min-width: 48%; /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    min-width: 100%; /* 1 item per row */
+  }
+}

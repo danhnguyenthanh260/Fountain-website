@@ -31,7 +31,7 @@ header {
   list-style: none;
   margin: 0; /* Loại bỏ margin mặc định */
   padding: 0; /* Loại bỏ padding mặc định */
-  gap: 1rem; /* Khoảng cách giữa các link */
+  gap: 2rem; /* Khoảng cách giữa các link */
 }
 
 .nav-links a {
@@ -53,35 +53,9 @@ header {
   margin-right: 3rem;
 }
 
-.finding img {
-  width: 20px;
-}
-
-.login-btn,
-.register-btn {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.35s ease;
-}
-
-.login-btn {
-  background-color: transparent;
-  color: #ffffff;
-}
-
-.login-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.register-btn {
-  background: #ffffff;
-  color: #ff6f28;
-}
-
-.register-btn:hover {
-  background-color: #ebe2df; /* Màu đậm hơn khi hover */
+.search-container {
+  position: relative;
+  display: flex;
 }
 
 .menu-toggle {
@@ -157,31 +131,75 @@ header {
   box-shadow: 0px 6px 15px rgba(255, 102, 0, 0.3);
 }
 
-/* Categories */
-.categories {
-  text-align: center;
-  padding: 30px;
+/* Carousel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.category-container {
-  display: flex;
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   justify-content: center;
+}
+
+.carousel {
+  display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn */
 }
 
 .category {
-  width: 200px;
+  min-width: 22%;
   text-align: center;
   background: #fff;
-  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category img {
+  max-height: 420px;
   width: 100%;
   border-radius: 10px;
+  display: block;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#prev-btn {
+  left: 30px;
+}
+
+#next-btn {
+  right: 30px;
 }
 
 /* About */
@@ -230,81 +248,4 @@ header {
 .feature-icon img {
   width: 40px; /* Kích thước icon */
   height: 40px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Responsive: Giảm kích thước nút trên mobile */
-  @media (max-width: 768px) {
-    .header {
-      background-size: cover;
-      height: auto;
-    }
-    .hero-btn {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-    .hero {
-      background: url("../image/Large_Background_image.png") no-repeat center top;
-      background-size: cover; /* Ensures full coverage on mobile */
-      height: auto;
-      min-height: 90vh;
-      padding: 15px;
-    }
-    /* Media Query cho Mobile */
-
-    header {
-      flex-direction: column; /* Sắp xếp dọc */
-      align-items: flex-start; /* Canh trái */
-      padding: 0.5rem;
-    }
-
-    .logo {
-      margin-bottom: 0.5rem; /* Khoảng cách với menu */
-    }
-
-    .nav-links {
-      display: none; /* Ẩn menu */
-      flex-direction: column; /* Dạng cột */
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin-top: 0.5rem;
-    }
-
-    .nav-links.active {
-      /* Hiển thị menu khi toggle */
-      display: flex;
-    }
-
-    .nav-links li {
-      margin: 0.5rem 0; /* Khoảng cách giữa các link */
-      text-align: center;
-    }
-
-    .registration {
-      flex-direction: column; /* Nút dọc */
-      width: 100%;
-    }
-
-    .login-btn,
-    .register-btn {
-      width: 100%; /* Nút full width */
-      margin: 0.25rem 0;
-    }
-
-    .menu-toggle {
-      display: block; /* Hiển thị toggle */
-    }
-  }
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-content {
-    max-width: 100%;
-  }
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
 }
