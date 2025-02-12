@@ -154,8 +154,9 @@ header {
   font-family: "Poppins", serif;
   font-size: 24px;
   line-height: 72px;
-  margin: 30px;
+  margin: 8px;
 }
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -175,7 +176,7 @@ header {
 
 .carousel {
   display: flex;
-  gap: 20px;
+  gap: 1px;
   overflow-x: auto;
   scroll-behavior: smooth;
   cursor: grab;
@@ -191,7 +192,6 @@ header {
   background: #fff;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category img {
@@ -208,22 +208,14 @@ header {
   font-size: 24px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
-  padding: 12px 22px;
-  border-radius: 100px;
+  padding: 1px 30px;
+  border-radius: 50%;
   cursor: pointer;
   user-select: none;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#prev-btn {
-  left: 30px;
-}
-
-#next-btn {
-  right: 30px;
 }
 
 /* About */
