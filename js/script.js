@@ -8,28 +8,12 @@ menuToggle.addEventListener("click", () => {
 
 // Redirect Functions
 function redirectToRegister() {
-  window.location.href = "register.html";
+  window.location.href = "./pages/register.html";
 }
 
 function redirectToLogin() {
-  window.location.href = "login.html";
+  window.location.href = "./pages/login.html";
 }
 function redirectToHome() {
-  window.location.href = "index.html";
-}
-
-function redirectToCourses() {
-  window.location.href = "courses.html";
-}
-
-function redirectToInstructors() {
-  window.location.href = "instructors.html";
-}
-
-function redirectToSchedules() {
-  window.location.href = "schedules.html";
-}
-
-function redirectToContact() {
-  window.location.href = "contact.html";
+  window.location.href = "./pages/home.html";
 }
